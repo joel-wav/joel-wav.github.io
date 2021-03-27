@@ -1,5 +1,5 @@
-const WHITE_KEYS = ['z','x','c','v','b','n','m']
-const BLACK_KEYS = ['s','d','g','h','j']
+/*const WHITE_KEYS = ['z','x','c','v','b','n','m']
+const BLACK_KEYS = ['s','d','g','h','j']*/
 
 const keys = document.querySelectorAll('.key')
 
@@ -8,7 +8,7 @@ keys.forEach(key => {
 })
 
 document.addEventListener('keydown', e => {
-    if (e.repeat) return 
+    if (e.repeat) return
     const key = e.key
     const whiteKeyIndex = WHITE_KEYS.indexOf(key)
     const blackKeyIndex = BLACK_KEYS.indexOf(key)

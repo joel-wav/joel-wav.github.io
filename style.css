@@ -1,38 +1,36 @@
-*, *::before, *::after {
-    box-sizing: border-box;
+h1 {
+    font-size: 27px;
+    font-family: Verdana;
+    position: relative;
+    text-align: center;
 }
 
 body {
-    background-color: #143F6B;
+    background-color: #d39090;
     margin: 0;
-    min-height: 100vh;
+}
+
+.piano {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.piano {
-    display: flex;
-}
-
-.key {
-    height: calc(var(--width) * 4);
-    width: var(--width);
-}
-
-.white {
-    --width: 100px;
+.key.white {
+    width: 100px;
     height: 400px;
     background-color: white;
     border: 1px solid #333;
+    position: relative;
+    top: 81px;
 }
 
 .white.active {
     background-color: #CCC;
 }
 
-.black {
-    --width: 60px;
+.key.black {
+    width: 60px;
     height: 240px;
     background-color: black;
     margin-left: -30px;
@@ -42,4 +40,10 @@ body {
 
 .black.active {
     background-color: #333
+}
+
+footer {
+    position: relative;
+    top: 150px;
+    text-align: center;
 }
