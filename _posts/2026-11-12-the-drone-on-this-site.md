@@ -89,19 +89,18 @@ The pad at the top of every page (in the header here, in the hero on the home pa
 
 ## 6. Testing something you can't screenshot
 
-Headless Chrome doesn't paint animation frames reliably, so screenshots were useless. Instead, I
-built small test pages with known obstacles, drove the drone with synthetic pointer and scroll
+I used CLAUDE to build small test pages with known obstacles, drove the drone with synthetic pointer and scroll
 events, recorded its trajectory every frame, and checked it numerically:
 
 - it never enters a box, and keeps at least ~24 px of clearance;
 - in a two-wall test, the flown path was within ~8% of the ideal shortest path around the inflated corners;
 - after waiting off-screen it resumes from exactly where it waited, with no teleporting.
 
-That's basically software-in-the-loop testing for a website. Old habits.
+software-in-the-loop testing for a website. Old habits.
 
 ## 7. Being a good citizen
 
-- It never blocks clicks (`pointer-events: none`), and it pauses in background tabs.
+- It never blocks clicks.
 - It's off entirely for visitors with *reduce motion* set.
 - There's a `[drone: on/off]` switch in the nav, remembered per browser.
 - It's one dependency-free JavaScript file.
