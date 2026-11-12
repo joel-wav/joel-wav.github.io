@@ -2,7 +2,6 @@
 layout: post
 title: "The drone on this site: A*, a velocity loop and a lot of edge cases"
 tags: [planning, controls, javascript]
-published: false   # DRAFT: review, edit, then delete this line (or set it to true) to publish
 ---
 
 If you're on a desktop, there's a small quadcopter flying behind this page. It takes off from the
