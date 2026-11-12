@@ -53,7 +53,7 @@ The tilt you see is just foreshortening along the acceleration vector: a multiro
 it accelerates. Heading slowly turns to face the direction of travel, and there's a tiny bob when
 hovering.
 
-## 4. The edge cases (where the real work was)
+## 4. edge cases
 
 **Scrolling moves the obstacles.** The drone lives in screen coordinates, so when you scroll the
 boxes move and the drone doesn't. My first version only noticed every 100 ms and simply let the
@@ -87,7 +87,7 @@ The pad at the top of every page (in the header here, in the hero on the home pa
   above you) and lands.
 - Clicking the pad also triggers RTL, and then it stays down until you click the pad again.
 
-## 6. Testing something you can't screenshot
+## 6. Testing
 
 I used CLAUDE to build small test pages with known obstacles, drove the drone with synthetic pointer and scroll
 events, recorded its trajectory every frame, and checked it numerically:
