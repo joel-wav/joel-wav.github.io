@@ -1,0 +1,249 @@
+---
+layout: default
+---
+<!-- ================= HERO ================= -->
+<header class="hero">
+  <div class="container hero-grid">
+    <div>
+      <p class="hello">&gt; hello, world. I'm</p>
+      <h1>Joel Varghese Jacob</h1>
+      <h2>// robotics &amp; autonomy engineer</h2>
+      <p class="lead">
+        I build simulation and autonomy software for UAVs: high-fidelity dynamics models,
+        PX4/ArduPilot software-in-the-loop workflows, control design and the CI infrastructure
+        that keeps it all honest. Currently a Software Engineer in Lidar and Autonomous Systems
+        at <span class="accent">MathWorks</span>, Hyderabad.
+      </p>
+      <div class="cta">
+        <a class="btn solid" href="{{ '/blog/' | relative_url }}">read the blog &rarr;</a>
+        <a class="btn" href="https://github.com/joel-wav" target="_blank" rel="noopener">github</a>
+        <a class="btn" href="https://www.linkedin.com/in/joel-jac/" target="_blank" rel="noopener">linkedin</a>
+        <a class="btn" href="mailto:joelvarjacob@gmail.com">email</a>
+      </div>
+    </div>
+
+    <div class="hero-right">
+    <div class="terminal" aria-label="terminal introduction">
+      <div class="bar">
+        <span class="dot r"></span><span class="dot y"></span><span class="dot g"></span>
+        <span class="title">joel@hyd: ~</span>
+      </div>
+      <div class="body" id="term"><noscript><span class="prompt">joel@hyd</span>:<span class="path">~</span>$ whoami
+<span class="out">robotics &amp; autonomy engineer @ MathWorks</span></noscript></div>
+    </div>
+    {% include gcs.html %}
+    </div>
+  </div>
+</header>
+
+<!-- ================= INTERESTS ================= -->
+<section id="interests">
+  <div class="container">
+    <h2 class="section-title reveal"><span class="idx">01.</span>tech_interests</h2>
+    <p class="section-sub reveal">// the problems I like to work on</p>
+    <div class="interests">
+      <div class="card interest reveal">
+        <div class="icon">[swarm]</div>
+        <h3>Multi-UAV &amp; Swarms</h3>
+        <p>Swarm simulation, multi-vehicle guidance and multi-UAV flight-log analysis.</p>
+      </div>
+      <div class="card interest reveal">
+        <div class="icon">[6DoF]</div>
+        <h3>UAV Dynamics &amp; SITL</h3>
+        <p>High-fidelity vehicle models in the loop with PX4 and ArduPilot.</p>
+      </div>
+      <div class="card interest reveal">
+        <div class="icon">[RL]</div>
+        <h3>RL for Planning</h3>
+        <p>Learning-based planning for robots with deep RL.</p>
+      </div>
+      <div class="card interest reveal">
+        <div class="icon">[G(s)]</div>
+        <h3>Robust Control</h3>
+        <p>Autopilot design and Quantitative Feedback Theory.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= EXPERIENCE ================= -->
+<section id="experience">
+  <div class="container">
+    <h2 class="section-title reveal"><span class="idx">02.</span>experience</h2>
+    <div class="timeline">
+
+      <div class="tl-item reveal">
+        <div class="tl-head">
+          <h3><span class="org">MathWorks</span></h3>
+          <span class="tl-date">Jul 2023 — present</span>
+        </div>
+        <div class="tl-role">Software Engineer · Lidar and Autonomous Systems · Hyderabad</div>
+
+        <div class="tl-group">&gt; uav_simulation_modeling_sitl</div>
+        <ul>
+          <li>Developed a <b>high-fidelity 6DoF multirotor dynamics model</b> for the Simulink–ArduPilot SITL workflow (ArduCopter, ArduPlane), now adopted by teams beyond UAV Toolbox.</li>
+          <li>Developed MATLAB APIs for <b>kinematic models of off-road vehicles</b> with Unreal Engine visualization, and defined their test strategy.</li>
+          <li>Built SITL integration infrastructure for a new MATLAB interface that launches <b>PX4 and ArduPilot SITL</b> directly from MATLAB; caught <b>2 critical defects</b> before release.</li>
+          <li>Containerized the <b>Simulink–Gazebo co-simulation testbed</b> with Docker so it runs anywhere in the CI pool, <b>cutting qualification time by ~50%</b>.</li>
+          <li>Primary quality engineer for <b>multi-UAV and swarm simulation</b>; authored 2 product examples on end-to-end SITL simulation and post-flight analysis.</li>
+        </ul>
+
+        <div class="tl-group">&gt; multi_uav_flight_log_analysis --role=qe-lead</div>
+        <ul>
+          <li>Led quality engineering for a new MATLAB toolset for <b>post-flight analysis across multiple UAVs</b> (ULOG, ArduPilot, CSV and custom formats); owned the test strategy for its 3 public APIs.</li>
+          <li>Generated flight-log datasets from <b>50+ PX4/ArduPilot SITL runs</b> of 5–10-vehicle flights with injected battery failures.</li>
+          <li>Found and fixed a <b>code-injection vulnerability</b> before release.</li>
+        </ul>
+
+        <div class="tl-group">&gt; infra_and_mentorship</div>
+        <ul>
+          <li>Refactored the Flight Log Analyzer app test bed, cutting sporadic failures from <b>45% to ≤5%</b>.</li>
+          <li>Scaled a code-modernization pipeline across the Image Processing, Computer Vision, Lidar, Robotics and UAV Toolboxes.</li>
+          <li>Technical interviewer for Control Systems candidates and mentor to new engineers.</li>
+        </ul>
+      </div>
+
+      <div class="tl-item reveal">
+        <div class="tl-head">
+          <h3><span class="org">MathWorks</span></h3>
+          <span class="tl-date">Jan 2023 — Jun 2023</span>
+        </div>
+        <div class="tl-role">Intern · Engineering Development Group · Hyderabad</div>
+        <ul>
+          <li>3D coverage planning with <b>deep reinforcement learning</b> for automated surface inspection with a UR5e manipulator (see projects).</li>
+          <li>Verified and validated the LMS Coefficient Estimator block for a Digital Predistorter.</li>
+        </ul>
+      </div>
+
+      <div class="tl-item reveal">
+        <div class="tl-head">
+          <h3><span class="org">DRDL, DRDO</span></h3>
+          <span class="tl-date">May 2022 — Jul 2022</span>
+        </div>
+        <div class="tl-role">Summer Research Intern · Hyderabad</div>
+        <ul>
+          <li>Modeled and simulated a <b>three-loop lateral autopilot</b> for a surface-to-air homing missile.</li>
+          <li>Designed a roll-autopilot compensator and automated the design workflow, improving stability margins by <b>up to 15%</b>.</li>
+          <li>Applied <b>QFT</b> to roll-autopilot design, improving disturbance rejection by <b>25–35%</b>; led to an IEEE PIECON 2023 paper.</li>
+        </ul>
+      </div>
+
+      <div class="tl-item reveal">
+        <div class="tl-head">
+          <h3><span class="org">NIT Warangal</span></h3>
+          <span class="tl-date">2019 — 2023</span>
+        </div>
+        <div class="tl-role">B.Tech. · Electrical and Electronics Engineering</div>
+        <ul>
+          <li><b>Best B.Tech. Project</b>, EE Department: <i>Control Strategies for the Operation of Isolated DC–DC Microgrids</i>.</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ================= PROJECTS ================= -->
+<section id="projects">
+  <div class="container">
+    <h2 class="section-title reveal"><span class="idx">03.</span>projects</h2>
+    <div class="grid cols-2">
+      <div class="card featured reveal">
+        <div class="icon">01 /</div>
+        <h3>3D Coverage Planning with Deep RL</h3>
+        <p>Camera viewpoint selection for automated 3D surface inspection with a UR5e arm, formulated
+           as an MDP over candidate viewpoints sampled between concentric spheres around the object.
+           A shaped reward favors new coverage and penalizes overlap and revisits; a PPO agent learns
+           the policy and is fine-tuned on new objects.</p>
+        <div class="metric">&gt; 99% surface coverage with as few as 11 viewpoints</div>
+        <div class="tags"><span class="tag">PPO</span><span class="tag">MATLAB</span><span class="tag">UR5e</span></div>
+      </div>
+      <div class="card featured reveal">
+        <div class="icon">02 /</div>
+        <h3>QFT Bounds Plotter</h3>
+        <p>A MATLAB tool that computes QFT plant templates and stability/performance bounds and
+           plots them on a Nichols chart.</p>
+        <div class="tags"><span class="tag">MATLAB</span><span class="tag">QFT</span><span class="tag">Control</span></div>
+        <!-- TODO: update the repo name once the QFT Bounds Plotter repo is public -->
+        <div class="links"><a href="https://github.com/joel-wav/qft-bounds-plotter" target="_blank" rel="noopener">&gt; view on github</a></div>
+      </div>
+    </div>
+
+    <div class="card pub reveal" style="margin-top:20px">
+      <div class="venue">publication · IEEE PIECON 2023</div>
+      <h3>Design of Missile Roll Autopilot based on Quantitative Feedback Theory</h3>
+      <p><b style="color:var(--heading)">J. V. Jacob</b>, M. M. Gade, R. Jeyasenthil, and Samran</p>
+      <div class="links"><a href="https://doi.org/10.1109/PIECON56912.2023.10085891" target="_blank" rel="noopener">&gt; doi:10.1109/PIECON56912.2023.10085891</a></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= STACK ================= -->
+<section id="stack">
+  <div class="container">
+    <h2 class="section-title reveal"><span class="idx">04.</span>stack</h2>
+    <div class="stack">
+      <div class="card reveal"><h3>languages</h3>
+        <ul><li>MATLAB</li><li>Python</li><li>C++</li><li>C</li></ul></div>
+      <div class="card reveal"><h3>sim_autonomy</h3>
+        <ul><li>Simulink</li><li>PX4 / ArduPilot</li><li>SITL</li><li>Gazebo</li><li>Unreal Engine</li></ul></div>
+      <div class="card reveal"><h3>controls_learning</h3>
+        <ul><li>QFT</li><li>compensator design</li><li>stability analysis</li><li>RL (PPO)</li></ul></div>
+      <div class="card reveal"><h3>tools</h3>
+        <ul><li>Git</li><li>Docker</li><li>Linux</li><li>CI pipelines</li></ul></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= BLOG PREVIEW ================= -->
+<section id="blog">
+  <div class="container">
+    <h2 class="section-title reveal"><span class="idx">//</span>latest_from_the_blog</h2>
+    {% if site.posts.size > 0 %}
+    <ul class="post-list reveal">
+      {% for post in site.posts limit:3 %}
+      <li>
+        <span class="date">{{ post.date | date: "%Y-%m-%d" }}</span>
+        <div>
+          <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+          <div class="excerpt">{{ post.excerpt | strip_html | truncate: 140 }}</div>
+        </div>
+      </li>
+      {% endfor %}
+    </ul>
+    {% endif %}
+    <div class="cta reveal"><a class="btn solid" href="{{ '/blog/' | relative_url }}">all posts &rarr;</a></div>
+  </div>
+</section>
+
+<!-- ================= BEYOND CODE ================= -->
+<section id="beyond">
+  <div class="container">
+    <h2 class="section-title reveal"><span class="idx">05.</span>beyond_code</h2>
+    <p class="section-sub reveal">// when I'm not in a simulator</p>
+    <div class="grid cols-3">
+      <div class="card reveal">
+        <div class="icon">[♪]</div>
+        <h3>Choir Master</h3>
+        <p class="mono" style="font-size:.8rem;color:var(--cyan)">Hyderabad St. Thomas Mar Thoma Church · 2025 — present</p>
+        <p>I lead the choir and play violin and organ. Program Convener for <b style="color:var(--heading)">Selah 2026</b>,
+           a 5-choir ecumenical fest and fundraiser that raised <b style="color:var(--heading)">INR 3.2 lakh</b>.</p>
+      </div>
+      <div class="card reveal">
+        <div class="icon">[edu]</div>
+        <h3>Co-Founder, UniSop</h3>
+        <p class="mono" style="font-size:.8rem;color:var(--cyan)">2024</p>
+        <p>A nonprofit that makes Master's and PhD applications affordable for STEM students;
+           so far it has helped 5 students (4 PhD, 1 Master's).
+           <a href="https://unisop.in/" target="_blank" rel="noopener">unisop.in</a></p>
+      </div>
+      <div class="card reveal">
+        <div class="icon">[🎻]</div>
+        <h3>Music Club, NIT Warangal</h3>
+        <p class="mono" style="font-size:.8rem;color:var(--cyan)">General Secretary &amp; Director · 2022 — 2023</p>
+        <p>Led a team of 50 musicians running technical events and concerts, and set up the club's
+           sponsorship team.</p>
+      </div>
+    </div>
+  </div>
+</section>

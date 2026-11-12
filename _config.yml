@@ -1,0 +1,10 @@
+title: Joel Varghese Jacob
+description: Robotics & autonomy engineer — UAV simulation, SITL, control and reinforcement learning.
+url: "https://joel-wav.github.io"
+baseurl: ""
+author: Joel Varghese Jacob
+markdown: kramdown
+highlighter: rouge
+permalink: /blog/:year/:month/:title/
+exclude:
+  - README.md

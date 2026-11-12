@@ -1,0 +1,32 @@
+---
+layout: default
+title: Blog
+description: Notes on UAV simulation, control, reinforcement learning and whatever else I'm building.
+---
+<section class="page">
+  <div class="container">
+    <header class="page-header">
+      <div>
+        <p class="mono accent">$ ls -lt ~/blog</p>
+        <h1>Blog</h1>
+        <p>Notes on UAV simulation, control, reinforcement learning and the things I'm building.</p>
+      </div>
+      {% include gcs.html %}
+    </header>
+    {% if site.posts.size > 0 %}
+    <ul class="post-list" style="margin-top:34px">
+      {% for post in site.posts %}
+      <li>
+        <span class="date">{{ post.date | date: "%Y-%m-%d" }}</span>
+        <div>
+          <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+          <div class="excerpt">{{ post.excerpt | strip_html | truncate: 160 }}</div>
+        </div>
+      </li>
+      {% endfor %}
+    </ul>
+    {% else %}
+    <p class="mono muted" style="margin-top:34px">// no posts yet — first one is compiling...</p>
+    {% endif %}
+  </div>
+</section>
